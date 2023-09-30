@@ -1,18 +1,6 @@
-# create-svelte
+# Game of Life
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Web app implementaion of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 
 ## Developing
 
@@ -36,3 +24,16 @@ npm run build
 You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+
+## Reference
+
+This project is from [Free Code Camp Take Home Projects](https://www.freecodecamp.org/learn/coding-interview-prep/take-home-projects/build-the-game-of-life).
+
+User stories to complete the challenge
+
+1. When I first arrive at the game, it will randomly generate a board and start playing.
+2. I can start and stop the board.
+3. I can set up the board.
+4. I can clear the board.
+5. When I press start, the game will play out.
+6. Each time the board changes, I can see how many generations have gone by.
