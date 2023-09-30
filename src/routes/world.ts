@@ -63,6 +63,7 @@ export class World {
 			newData.push(yList);
 		}
 
+		this._generation = 1;
 		this._data = newData;
 	}
 

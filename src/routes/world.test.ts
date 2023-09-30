@@ -49,11 +49,17 @@ describe('World', () => {
 		it('should clear world and restart generation', () => {
 			const world = World.random(10, 10);
 
+			world.advance();
+			world.advance();
+			world.advance();
+
 			world.clear();
 
 			const totalLivingCell = world.data.reduce<number>((total, cellList) => {
 				return total + cellList.reduce<number>((subtotal, cell) => subtotal + cell.state, 0);
 			}, 0);
+
+			console.log(world.generation);
 
 			expect(totalLivingCell).toBe(0);
 			expect(world.generation).toBe(1);
